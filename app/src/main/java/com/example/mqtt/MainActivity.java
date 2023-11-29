@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     String clienteID = "";
 
-    static String MQTTHOST = "tcp://proyecto4.cloud.shiftr.io";
+    static String MQTTHOST = "tcp://proyecto4.cloud.shiftr.io:1883";
     static String MQTTUSER = "proyecto4";
     static String MQTTPASS = "USJYKCajDWv3YKlN";
 
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        
+
         connectBroker();
 
         Button btn_encendido = findViewById(R.id.btn_encender);
